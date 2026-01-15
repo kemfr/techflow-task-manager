@@ -1,0 +1,16 @@
+name: Testes de Qualidade TechFlow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+    - name: Rodar Verificação de Sintaxe
+      run: |
+        python main.py
