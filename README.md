@@ -12,9 +12,8 @@ Utilizamos o **Framework Scrum** com suporte visual do **Kanban**.
 Abaixo, representamos o fluxo básico de interação do usuário com o sistema:
 
 
-```mermaid```
 graph TD
-    A -->[Operador Logístico] |Cadastra Entrega| B(Sistema TechFlow)
+    A[Operador Logístico] -->|Cadastra Entrega| B(Sistema TechFlow)
     B -->|Processa Dados| C{Dados Válidos?}
     C -->|Sim| D[Tarefa Salva e Listada]
     C -->|Não| E[Alerta de Erro] 
