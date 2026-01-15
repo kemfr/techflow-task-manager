@@ -24,3 +24,15 @@ O sistema foi planeado utilizando Diagramas de Casos de Uso para identificar as 
 
 ## 5. Gestão de Mudanças (Unidade 4)
 Durante o desenvolvimento, simulámos uma mudança de escopo (adição de níveis de prioridade). Esta mudança foi gerida através do refinamento do Backlog, demonstrando a adaptabilidade do processo ágil sem comprometer o cronograma principal.
+
+---
+### 6. Gestão de Mudanças e Qualidade
+Durante o desenvolvimento da Sprint 1, identificamos a necessidade de incluir um campo de 'Prioridade' nas entregas, algo não previsto no escopo inicial. Seguindo a **Agilidade**, o Product Owner priorizou essa mudança no Backlog, e a implementação foi realizada sem atrasar o cronograma principal.
+
+Para garantir a confiabilidade, o projeto utiliza **GitHub Actions** para Integração Contínua (CI), assegurando que cada nova funcionalidade seja testada antes da entrega final.
+
+graph TD
+    A[Operador Logístico] -->|Cria Tarefa| B(Sistema TechFlow)
+    B -->|Valida Dados| C{Dados OK?}
+    C -->|Sim| D[Tarefa Salva no Banco]
+    C -->|Não| E[Exibir Erro]
