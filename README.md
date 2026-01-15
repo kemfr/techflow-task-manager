@@ -14,12 +14,13 @@ Abaixo, representamos o fluxo básico de interação do usuário com o sistema:
 
 ```mermaid```
 graph TD
-    A[Operador Logístico] -->|Cadastra Entrega| B(Sistema TechFlow)
+    A -->[Operador Logístico] |Cadastra Entrega| B(Sistema TechFlow)
     B -->|Processa Dados| C{Dados Válidos?}
     C -->|Sim| D[Tarefa Salva e Listada]
-    C -->|Não| E[Alerta de Erro]
+    C -->|Não| E[Alerta de Erro] 
 
-##4. Engenharia de Requisitos
+
+## 4. Engenharia de Requisitos
 Requisitos Funcionais (RF)
 RF01: O sistema deve permitir o cadastro de novas tarefas de logística.
 
